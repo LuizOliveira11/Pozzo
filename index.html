@@ -9,12 +9,85 @@
 <body>
   <div class="container">
     <h1>Pozzo 💊</h1>
-    <p class="subtitle">Seus remédios de hoje</p>
+    <p class="subtitle">Gerencie seus remédios com facilidade</p>
     
-    <div id="medicineList" class="medicine-list">
-      <!-- Aqui vai ser renderizado via JavaScript -->
+    <!-- FORMULÁRIO -->
+    <form id="medicineForm" class="medicine-form">
+      <div class="form-section">
+        <h2>Adicionar Remédio</h2>
+        
+        <!-- Preview da Foto -->
+        <div class="form-group">
+          <label for="photoInput">📷 Foto da Receita</label>
+          <input 
+            type="file" 
+            id="photoInput" 
+            accept="image/*"
+            class="file-input"
+          >
+          <div id="photoPreview" class="photo-preview"></div>
+        </div>
+
+        <!-- Nome do Remédio -->
+        <div class="form-group">
+          <label for="medicineName">Nome do Remédio</label>
+          <input 
+            type="text" 
+            id="medicineName" 
+            placeholder="Ex: Dipirona"
+            required
+          >
+        </div>
+
+        <!-- Dosagem -->
+        <div class="form-group">
+          <label for="medicineDosage">Dosagem</label>
+          <input 
+            type="text" 
+            id="medicineDosage" 
+            placeholder="Ex: 500mg"
+            required
+          >
+        </div>
+
+        <!-- Horário -->
+        <div class="form-group">
+          <label for="medicineTime">Horário</label>
+          <input 
+            type="time" 
+            id="medicineTime"
+            required
+          >
+        </div>
+
+        <!-- Dias da Semana -->
+        <div class="form-group">
+          <label>Dias da Semana</label>
+          <div class="days-checkbox">
+            <label><input type="checkbox" value="seg"> Segunda</label>
+            <label><input type="checkbox" value="ter"> Terça</label>
+            <label><input type="checkbox" value="qua"> Quarta</label>
+            <label><input type="checkbox" value="qui"> Quinta</label>
+            <label><input type="checkbox" value="sex"> Sexta</label>
+            <label><input type="checkbox" value="sab"> Sábado</label>
+            <label><input type="checkbox" value="dom"> Domingo</label>
+          </div>
+        </div>
+
+        <!-- Botão Enviar -->
+        <button type="submit" class="btn-add">
+          ➕ Adicionar Remédio
+        </button>
+      </div>
+    </form>
+
+    <!-- LISTA DE REMÉDIOS -->
+    <div class="medicine-section">
+      <h2>Seus Remédios</h2>
+      <div id="medicineList" class="medicine-list"></div>
     </div>
   </div>
+
   <script src="app.js"></script>
 </body>
 </html>
