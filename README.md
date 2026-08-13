@@ -63,7 +63,7 @@ Prioritized user journey:
 ## 👨‍💻 Author
 
 **Luiz Fellipe** — PM learning to code
-- LinkedIn: [linkedin.com/in/luizfellipe](https://linkedin.com/in/luizfellipe)
+- LinkedIn: [linkedin.com/in/luizfellipe](https://linkedin.com/in/luizo41)
 - GitHub: [@LuizOliveira11](https://github.com/LuizOliveira11)
 
 ## 📝 License
